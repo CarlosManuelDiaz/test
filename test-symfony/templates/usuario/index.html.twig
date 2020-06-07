@@ -15,14 +15,14 @@
             <th>Updated At</th>
         </tr>
         {% for usuario in usuarios %}
-    <tr>       
-        <th>{{usuario.Id}}</th>
-        <th>{{usuario.FirstName}}</th>
-        <th>{{usuario.LastName}}</th>
-        <th>{{usuario.CreatedAt|date('d-m-Y')}}</th>
-        <th>{{usuario.UpdatedAt|date('d-m-Y')}}</th>     
-    </tr>
-{% endfor %}
+        <tr>       
+            <th>{{usuario.Id}}</th>
+            <th>{{usuario.FirstName}}</th>
+            <th>{{usuario.LastName}}</th>
+            <th>{{usuario.CreatedAt|date('d-m-Y')}}</th>
+            <th>{{usuario.UpdatedAt|date('d-m-Y')}}</th>     
+        </tr>
+        {% endfor %}
     </table>
 </div>
 {% endblock %}
